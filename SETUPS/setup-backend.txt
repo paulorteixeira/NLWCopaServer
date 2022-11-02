@@ -1,0 +1,57 @@
+criar pasta root
+criar pasta server
+em root/server: 
+> npm init -y
+> code .
+Instalar o typescript:
+> npm i typescript -D
+Setup TS:
+> npx tsc --init
+
+em tsconfig.json:
+mudar o target para es2020
+
+Fastify: (Equivalente ao Express)
+Instalar o Fastify
+> npm i fastify
+
+Criar a pasta src em root/server
+em src criar o arquivo server.ts
+
+Instalar o tsx (compila e executa)
+> npm i tsx -D
+
+Adicionar o script em package.json
+ "dev": "tsx watch src/server.ts"
+
+Prisma:(Banco de Dados)
+
+Instalar o prisma:
+> npm i prisma -D
+> npm i @prisma/client
+> npx prisma init --datasource-provider SQLite
+Criar o model
+para migrar:
+> npx prisma migrate dev
+
+para visualizar o banco:
+> npx prisma studio
+
+Diagrama Entidade e Relacionamento:
+Instalar:
+> npm i prisma-erd-generator @mermaid-js/mermaid-cli -D
+Criar generator erd em schema.prisma
+
+Executar o genetaror:
+> npx prisma generate
+
+
+Configurar o CORS:
+> npm i @fastify/cors
+
+
+
+
+
+
+
